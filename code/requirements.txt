@@ -1,0 +1,5 @@
+escpos==1.9
+keyboard==0.13.5
+more_itertools==10.0.0
+openai==0.25.0
+yeelight==0.7.12
