@@ -23,7 +23,6 @@ def speech_to_text():
         audio = r.listen(source, 4, phrase_time_limit=5)                           #source: https://stackoverflow.com/questions/53860423/saving-an-audio-file answer by: Steampunkery Dec 20, 2018
         bulb.turn_off()
         bulb.turn_on()
-        #bulb.set_rgb(0, 204, 102) #Green for decoding audio                       #Source:P B.J. Maat: threading as means for UI blinking --> TODO: Yeelight programming
         bulb.set_rgb(0, 204, 0)
         bulb.start_flow(Flow(count = 0, transitions = [TemperatureTransition(3500, duration = 1000, brightness = 1), SleepTransition(duration = 400),TemperatureTransition(3500, duration = 1000, brightness = 100)]))
     try:    
@@ -43,7 +42,7 @@ def speech_to_text():
 
 #source: https://platform.openai.com/examples/default-qa
 def chat_gpt(input):
-    openai.organization = "org-aApZ50xW71Eae2bq1bewt2jh"                        #source: OpenAI API documentation
+    openai.organization = "OPENAI_ORG_KEY"                        #source: OpenAI API documentation
     #print(os.getenv("OPENAI_API_KEY"))
     openai.api_key = os.environ["OPENAI_API_KEY"]          # os.getenv("OPENAI_API_KEY")
     # print(openai.Model.list())                                                                          #source: https://platform.openai.com/examples/default-qa
@@ -103,7 +102,7 @@ def text_to_print(Q, A):                                                        
 
 
 if __name__ == "__main__":
-    bulb = Bulb("192.168.0.100", effect="smooth", duration=1000) #10.15.3.171
+    bulb = Bulb("192.168.0.100", effect="smooth", duration=1000) 
     bulb.set_rgb(51, 51, 255) #baisc blue purple for recording audio
     bulb.set_brightness(40)
     bulb.turn_on()
