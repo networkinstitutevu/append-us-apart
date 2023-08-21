@@ -13,6 +13,9 @@ The use of Large Language Models has exploded since OpenAI provided access to th
 ## Authors
 The work is created by [Daan Wijnhorst](https://www.linkedin.com/in/daan-wijnhorst-84919b18b/) (Computer Science) and funded by the VU Network Institute.
 
+## Sources
+Cloud structure: Charisse Eaves, [https://www.youtube.com/watch?v=nlf-XaPj2nY&ab_channel=CharisseEaves](https://www.youtube.com/watch?v=nlf-XaPj2nY&ab_channel=CharisseEaves)
+
 ## Photos
 ![Overview](./photos/Overview.jpg)
 ![NI event photo 2](./photos/NI_Event_2.jpeg)
